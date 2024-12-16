@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Flappy Bird</title>
+        <script src="scriptflappy.js"></script>
+        <style>
+            body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+#board {
+    /* background-color: skyblue; */
+    background-image: url("https://raw.githubusercontent.com/ImKennyYip/flappy-bird/refs/heads/master/flappybirdbg.png");
+}
+
+.back{
+    position: absolute;
+    top: 90%;
+    left: 7.1%;
+    transform:translate(-50%,-50%)
+    }
+
+    .next{
+    position: absolute;
+    top: 90%;
+    left: 88%;
+    transform:translate(-50%,-50%)
+    }
+    .box{
+    border: 3px solid #000000;
+    padding: 5px 20px;
+    color: rgb(0, 0, 0);
+    transition: 0.5 ease;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.box:hover{
+    background-color:black;
+    color: white;
+}
+        </style>
+    </head>
+    <body>
+        <canvas id="board"></canvas>
+        <div class="back">
+            <a href="https://tobythepm.github.io/tem-game-selection/" class="box"> ← Back </a>
+        </div>
+    </body>
+</html>
